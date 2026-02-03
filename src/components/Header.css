@@ -53,4 +53,30 @@
     .nav {
         display: none;
     }
+
+    .header {
+        padding: 1.2rem 0;
+    }
+
+    .header.scrolled {
+        padding: 0.8rem 0;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        padding: 1rem 0;
+    }
+
+    .header.scrolled {
+        padding: 0.7rem 0;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
 }

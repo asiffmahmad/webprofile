@@ -98,4 +98,85 @@
         grid-template-columns: 1fr;
         gap: 4rem;
     }
+
+    .about-text .lead {
+        font-size: 1.4rem;
+    }
+
+    .about-text p {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        gap: 3rem;
+    }
+
+    .about-text .lead {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .goals-box {
+        padding: 2rem;
+    }
+
+    .goals-box p {
+        font-size: 1rem;
+    }
+
+    .stat-number {
+        font-size: 3rem;
+    }
+
+    .stat-card {
+        padding: 2rem 1.2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-content {
+        gap: 2.5rem;
+    }
+
+    .about-text .lead {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .goals-box {
+        padding: 1.5rem;
+    }
+
+    .goals-box p {
+        font-size: 0.95rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .stat-card {
+        padding: 1.8rem 1rem;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
 }
