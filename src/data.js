@@ -1,10 +1,10 @@
 export const profileData = {
-  name: "Asiff Mahmad",
+  name: "Asiff ",
   role: "Senior Java Backend Engineer | Microservices & Cloud-Native Systems",
   email: "asiffmahmad9@gmail.com",
   github: "https://github.com/asiffmahmad",
   linkedin: "https://www.linkedin.com/in/asiffmahmad/",
-  
+
   about: "Java Backend Engineer with 4+ years of experience building high-throughput, mission-critical banking and financial systems. Specialized in designing microservices architectures, optimizing database performance, and modernizing legacy monoliths into scalable, cloud-native platforms. Strong expertise in Spring Boot, distributed systems, container orchestration, and secure API development.",
 
   experienceHighlights: [
@@ -68,10 +68,10 @@ export const profileData = {
     "React.js"
   ],
 
-    collaboration: "Collaborate with cross-functional teams including product, QA, and DevOps to deliver secure, scalable, and performance-driven solutions. Contribute to architectural discussions, conduct code reviews, and ensure production stability through structured engineering practices.",
+  collaboration: "Collaborate with cross-functional teams including product, QA, and DevOps to deliver secure, scalable, and performance-driven solutions. Contribute to architectural discussions, conduct code reviews, and ensure production stability through structured engineering practices.",
 
   goals: "Advancing toward enterprise architecture and system design leadership by deepening expertise in distributed systems, cloud-native patterns, and scalable frontend-backend integrations.",
-  
+
   projects: [
     {
       title: "Cloud-Native Banking Platform",
