@@ -73,36 +73,36 @@ export const profileData = {
   goals: "Advancing toward enterprise architecture and system design leadership by deepening expertise in distributed systems, cloud-native patterns, and scalable frontend-backend integrations.",
 
   projects: [
+    // {
+    //   title: "Cloud-Native Banking Platform",
+    //   description: "Architected and implemented microservices-based banking modules to replace a legacy monolithic system. Achieved 40% improvement in transaction processing performance and enabled horizontal scalability during peak financial operations.",
+    //   impact: [
+    //     "Reduced system downtime",
+    //     "Improved deployment frequency using CI/CD",
+    //     "Containerized services for scalable cloud deployment"
+    //   ],
+    //   tech: [
+    //     "Java",
+    //     "Spring Boot",
+    //     "Microservices",
+    //     "Docker",
+    //     "Oracle SQL"
+    //   ]
+    // },
     {
-      title: "Cloud-Native Banking Platform",
-      description: "Architected and implemented microservices-based banking modules to replace a legacy monolithic system. Achieved 40% improvement in transaction processing performance and enabled horizontal scalability during peak financial operations.",
+      title: "ConnectPpl - Open Source Collaboration",
+      description: "A collaborative platform designed to bridge the gap between open-source enthusiasts and project maintainers. Features intelligent matching based on skill sets, interests, and project difficulty levels to foster community-driven innovation.",
       impact: [
-        "Reduced system downtime",
-        "Improved deployment frequency using CI/CD",
-        "Containerized services for scalable cloud deployment"
+        "Streamlined contributor onboarding for multiple GitHub projects",
+        "Implemented real-time collaboration features using WebSockets",
+        "Integrated GitHub OAuth for seamless user authentication"
       ],
       tech: [
-        "Java",
+        "React.js",
         "Spring Boot",
-        "Microservices",
-        "Docker",
-        "Oracle SQL"
-      ]
-    },
-    {
-      title: "Secure Payment Gateway Integration",
-      description: "Designed and implemented secure payment processing APIs integrated with third-party providers, ensuring compliance with financial security standards and high availability requirements.",
-      impact: [
-        "Implemented secure authentication and authorization",
-        "Handled high-volume transaction validation",
-        "Ensured PCI-aligned architecture practices"
-      ],
-      tech: [
-        "Java",
-        "Spring Boot",
-        "REST APIs",
-        "Security",
-        "MySQL"
+        "PostgreSQL",
+        "WebSocket",
+        "GitHub API"
       ]
     },
     {
@@ -117,6 +117,22 @@ export const profileData = {
         "Spring WebFlux",
         "WebSocket",
         "Chart.js"
+      ]
+    },
+    {
+      title: "Cloud-Native Microservices Orchestrator",
+      description: "Developed a custom orchestration layer to manage complex microservices deployments across hybrid cloud environments. Enhanced observability and automated scaling based on resource utilization.",
+      impact: [
+        "Reduced manual deployment effort by 60%",
+        "Implemented automated health checks and self-healing",
+        "Centralized logging and monitoring for 50+ services"
+      ],
+      tech: [
+        "Kubernetes",
+        "Docker",
+        "Prometheus",
+        "Grafana",
+        "Java"
       ]
     }
   ],
