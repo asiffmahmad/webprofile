@@ -1,5 +1,5 @@
 export const profileData = {
-  name: "Asiff ",
+  name: "Asiff Mahmad",
   role: "Senior Java Backend Engineer | Microservices & Cloud-Native Systems",
   email: "asiffmahmad9@gmail.com",
   github: "https://github.com/asiffmahmad",
