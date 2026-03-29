@@ -17,11 +17,19 @@ const Header = () => {
     useEffect(() => {
         if (!hasFetched.current) {
             hasFetched.current = true;
-            // Use the remote CounterAPI so it works automatically on GitHub Pages
-            fetch(`https://api.counterapi.dev/v1/asiffwebprofile/visits/up`)
+            
+            const hasVisited = sessionStorage.getItem("hasVisited");
+            const url = hasVisited 
+                ? `https://api.counterapi.dev/v1/asiffwebprofile/visits/` 
+                : `https://api.counterapi.dev/v1/asiffwebprofile/visits/up`;
+
+            fetch(url)
                 .then(res => res.json())
                 .then(data => {
                     setVisitCount(data.count);
+                    if (!hasVisited) {
+                        sessionStorage.setItem("hasVisited", "true");
+                    }
                 })
                 .catch(err => console.error('Error fetching visit count:', err));
         }
