@@ -27,8 +27,40 @@ const Header = () => {
                 .then(res => res.json())
                 .then(data => {
                     setVisitCount(data.count);
+                    
                     if (!hasVisited) {
                         sessionStorage.setItem("hasVisited", "true");
+                        
+                        // New visitor: Log details to root JSON via backend
+                        fetch('https://ipwho.is/')
+                            .then(res => res.json())
+                            .then(ipData => {
+                                const visitorData = {
+                                    visit_count: data.count,
+                                    ip: ipData.ip,
+                                    city: ipData.city,
+                                    region: ipData.region,
+                                    country: ipData.country,
+                                    postal_code: ipData.postal,
+                                    coordinates: `${ipData.latitude}, ${ipData.longitude}`,
+                                    isp: ipData.connection?.isp || 'unknown',
+                                    browser_agent: navigator.userAgent,
+                                    browser_language: navigator.language,
+                                    screen_resolution: `${window.screen.width}x${window.screen.height}`,
+                                    window_size: `${window.innerWidth}x${window.innerHeight}`,
+                                    platform: navigator.platform,
+                                    cpu_cores: navigator.hardwareConcurrency || 'unknown',
+                                    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+                                };
+
+                                fetch('http://localhost:3001/api/log', {
+                                    method: 'POST',
+                                    headers: { 'Content-Type': 'application/json' },
+                                    body: JSON.stringify(visitorData)
+                                }).catch(err => console.error("Could not save log:", err));
+
+                            })
+                            .catch(err => console.error("Could not fetch IP data", err));
                     }
                 })
                 .catch(err => console.error('Error fetching visit count:', err));
