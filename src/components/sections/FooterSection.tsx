@@ -16,9 +16,9 @@ export function FooterSection() {
       {/* Background Soft Watercolor Glow */}
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-orange-500/10 dark:bg-orange-500/15 rounded-full blur-[100px] pointer-events-none translate-y-1/2 -translate-x-1/4"></div>
 
-      <div className="container mx-auto px-6 flex-1 flex flex-col justify-between relative z-10 max-w-7xl">
+      <div className="container mx-auto px-6 flex-1 flex flex-col justify-center relative z-10 max-w-7xl">
         
-        <div className="flex flex-col flex-1 justify-center">
+        <div className="flex flex-col w-full">
           {/* 1. Large Editorial Headline */}
           <motion.header 
             className="w-full mb-8 lg:mb-10"
@@ -48,7 +48,7 @@ export function FooterSection() {
 
           {/* 3. Content Area - Asymmetrical Composition */}
           <motion.main 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 mb-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 mb-0"
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, margin: "-100px" }}
@@ -136,7 +136,7 @@ export function FooterSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="flex flex-col sm:flex-row items-center justify-between pt-6 lg:pt-8 border-t border-border/40 text-[10px] lg:text-xs font-medium text-muted-foreground uppercase tracking-widest mt-4"
+          className="flex flex-col sm:flex-row items-center justify-between pt-6 lg:pt-8 border-t border-border/40 text-[10px] lg:text-xs font-medium text-muted-foreground uppercase tracking-widest mt-12 lg:mt-16"
         >
           <p>© {siteData.footer.copyrightYear} {siteData.personal.name}. All rights reserved.</p>
           <p className="mt-2 sm:mt-0 flex items-center gap-2">
