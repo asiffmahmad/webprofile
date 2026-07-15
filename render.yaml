@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: web-profile
-    runtime: docker
-    plan: free
-    region: oregon # Or any other region

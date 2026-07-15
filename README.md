@@ -1,77 +1,36 @@
-# Professional Web Profile - Full Stack Developer
- 
-A premium, modern, and high-performance web profile built for developers to showcase their expertise, projects, and professional brand. Designed with a clean SaaS-style aesthetic, this profile is optimized for sharing on LinkedIn and with potential clients.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## 🚀 Features
+## Getting Started
 
-- **Premium UI/UX**: Modern design with glassmorphism, 3D terminal visuals, and custom typography.
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
-- **Scroll Reveal Animations**: Smooth entry animations for sections and project cards using Intersection Observer.
-- **Tech-Centric Aesthetic**: Integrated developer status badges and syntax-highlighted code visuals.
-- **Modular Data**: All content is managed via a single `src/data.js` file for easy updates.
+First, run the development server:
 
-## 🛠 Tech Stack
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- **Frontend**: React.js
-- **Build Tool**: Vite
-- **Styling**: Vanilla CSS (Custom Variable System)
-- **Deployment**: Optimized for Vercel, Netlify, or GitHub Pages
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 📦 Installation & Local Development
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Follow these steps to get the project running on your local machine:
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-1. **Clone the repository** (if you've already pushed it) or navigate to the project folder:
-   ```bash
-   cd WebProfile
-   ```
+## Learn More
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+To learn more about Next.js, take a look at the following resources:
 
-3. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
-   The application will be available at `http://localhost:5173`.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 📤 How to Create a New Repo & Push to Git
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-If you want to host this on GitHub, follow these steps:
+## Deploy on Vercel
 
-1. **Initialize Git** (if not already done):
-   ```bash
-   git init
-   ```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-2. **Add all files**:
-   ```bash
-   git add .
-   ```
-
-3. **Commit your changes**:
-   ```bash
-   git commit -m "Initial commit: Professional Web Profile setup"
-   ```
-
-4. **Create a new repository on GitHub**:
-   - Go to [GitHub](https://github.com/new).
-   - Give it a name (e.g., `web-profile`).
-   - Click **Create repository**.
-
-5. **Connect and Push**:
-   Copy the commands from GitHub and run them in your terminal (replace `YOUR_USERNAME` and `REPO_NAME`):
-   ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-## 📝 Customization
-
-To update your profile details, open `src/data.js` and modify the `profileData` object. You can change your name, role, projects, skills, and contact information without touching any CSS or component logic.
-
----
-Built with ❤️ by Asiff
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

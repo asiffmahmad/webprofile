@@ -1,0 +1,30 @@
+[
+  {
+    "id": "banking",
+    "industry": "Banking Systems",
+    "focus": ["Backend", "Security", "Microservices"],
+    "description": "Engineered robust, high-availability backend microservices for global banking platforms. Focused intensely on security, transaction performance, and system integrity.",
+    "iconShape": "square"
+  },
+  {
+    "id": "logistics",
+    "industry": "Global Logistics",
+    "focus": ["Architecture", "Cloud", "Scale"],
+    "description": "Led the development of scalable logistics systems handling millions of daily events. Architected complex AWS cloud solutions for real-time tracking.",
+    "iconShape": "circle"
+  },
+  {
+    "id": "finance",
+    "industry": "Financial Platforms",
+    "focus": ["Compliance", "Transactions", "Reliability"],
+    "description": "Built mission-critical transactional platforms with rigorous compliance standards and zero-downtime deployment requirements.",
+    "iconShape": "diamond"
+  },
+  {
+    "id": "saas",
+    "industry": "Enterprise SaaS",
+    "focus": ["Modern Web", "Product", "User Experience"],
+    "description": "Designing and building premium, user-centric software products. Combining deep backend engineering expertise with modern frontend craftsmanship.",
+    "iconShape": "leaf"
+  }
+]

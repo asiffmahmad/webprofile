@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Asiff Mahmad",
+  "alternateName": "Asiff",
+  "url": "https://www.asiff.dev",
+  "jobTitle": "Software Engineer",
+  "description": "Building software that helps people and businesses work better.",
+  "image": "https://www.asiff.dev/images/Subject.png",
+  "sameAs": [
+    "https://github.com/asiffmahmad",
+    "https://linkedin.com/in/asiffmahmad",
+    "https://twitter.com/asiffmahmad",
+    "https://instagram.com/asiffmahmad",
+    "https://youtube.com/@asiffmahmad",
+    "mailto:hello@asiff.dev"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "India"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "personal": {
+    "name": "Asiff Mahmad",
+    "title": "Software Engineer",
+    "subtitle": "Independent Builder",
+    "tagline": "Building software products that solve real-world problems through elegant architecture and calm design.",
+    "location": "India",
+    "availability": "Open for collaborations",
+    "mission": "I build software that helps people and businesses work better."
+  },
+  "navigation": [
+    { "label": "Home", "href": "#home" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Products", "href": "#products" },
+    { "label": "Contact", "href": "#connect" }
+  ],
+  "social": [
+    { "platform": "GitHub", "url": "https://github.com/asiffmahmad" },
+    { "platform": "LinkedIn", "url": "https://linkedin.com/in/asiffmahmad" },
+    { "platform": "Email", "url": "mailto:hello@asiff.dev" }
+  ],
+  "footer": {
+    "heading": "Let's build something <br class=\"hidden md:block\" /> meaningful together.",
+    "subheading": "I'm always interested in discussing software, product ideas and meaningful collaborations.",
+    "brandText": "Building software products under",
+    "brandName": "asiff.dev",
+    "copyrightYear": "2026",
+    "contactLabel": "Connect",
+    "locationLabel": "Location",
+    "availabilityLabel": "Availability",
+    "responseTimeLabel": "Response Time",
+    "responseTime": "Usually within 24 hours",
+    "timezoneLabel": "Timezone",
+    "timezone": "IST (UTC+5:30)",
+    "statusLabel": "Current Status",
+    "status": "Building new products",
+    "ctaText": "Connect With Me"
+  }
+}

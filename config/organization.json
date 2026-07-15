@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "asiff.dev",
+  "url": "https://www.asiff.dev",
+  "logo": "https://www.asiff.dev/icon.png",
+  "sameAs": [
+    "https://github.com/asiffmahmad",
+    "https://twitter.com/asiffmahmad"
+  ]
+}

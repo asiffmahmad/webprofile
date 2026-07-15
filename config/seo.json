@@ -1,0 +1,57 @@
+{
+  "global": {
+    "applicationName": "asiff.dev",
+    "metadataBase": "https://www.asiff.dev",
+    "title": {
+      "default": "Asiff Mahmad | Software Engineer & Independent Builder",
+      "template": "%s | Asiff Mahmad"
+    },
+    "description": "I build software that helps people and businesses work better. Explore my product ecosystem, background, and experience.",
+    "keywords": [
+      "Asiff Mahmad",
+      "Mahmad Asiff",
+      "Asiff",
+      "Software Engineer",
+      "Independent Product Builder",
+      "Modern Software Products",
+      "Personal Software Ecosystem",
+      "Full Stack Developer"
+    ],
+    "authors": [{ "name": "Asiff Mahmad", "url": "https://www.asiff.dev" }],
+    "creator": "Asiff Mahmad",
+    "publisher": "asiff.dev",
+    "themeColor": [
+      { "media": "(prefers-color-scheme: light)", "color": "#fafafa" },
+      { "media": "(prefers-color-scheme: dark)", "color": "#09090b" }
+    ],
+    "colorScheme": "dark light",
+    "verification": {
+      "google": "replace-with-google-site-verification-id",
+      "yandex": "",
+      "yahoo": "",
+      "other": {}
+    }
+  },
+  "openGraph": {
+    "type": "website",
+    "locale": "en_US",
+    "url": "https://www.asiff.dev",
+    "siteName": "asiff.dev"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@asiffmahmad",
+    "creator": "@asiffmahmad"
+  },
+  "robots": {
+    "index": true,
+    "follow": true,
+    "googleBot": {
+      "index": true,
+      "follow": true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  }
+}

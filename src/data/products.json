@@ -1,0 +1,122 @@
+[
+  {
+    "id": "vision-board",
+    "name": "Vision Board",
+    "status": "Live",
+    "description": "A modern digital canvas to organize your goals, aspirations, and visual inspiration. Built for clarity and focus.",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase"
+    ],
+    "tags": [
+      "Design",
+      "Productivity"
+    ],
+    "platform": "Web",
+    "category": "Productivity",
+    "version": "v1.2.0",
+    "url": "https://vision.asiff.dev",
+    "github": "https://github.com/asiffmahmad/dummy",
+    "docsUrl": "https://docs.vision.asiff.dev",
+    "updatedAt": "2026-07-10",
+    "previewImage": null,
+    "color": "green"
+  },
+  {
+    "id": "company-os",
+    "name": "Company Management",
+    "status": "Building",
+    "description": "Unified management dashboard for independent builders and small studios to run their operations effortlessly.",
+    "techStack": [
+      "Next.js",
+      "Prisma",
+      "PostgreSQL"
+    ],
+    "tags": [
+      "B2B",
+      "SaaS"
+    ],
+    "platform": "Web",
+    "category": "Business",
+    "version": "v0.5.0-alpha",
+    "url": null,
+    "github": "https://github.com/asiffmahmad/dummy",
+    "docsUrl": null,
+    "updatedAt": "2026-06-25",
+    "previewImage": null,
+    "color": "orange"
+  },
+  {
+    "id": "ai-workspace",
+    "name": "AI Workspace",
+    "status": "Planning",
+    "description": "A centralized, intelligence-driven environment for managing engineering workflows and research.",
+    "techStack": [
+      "Next.js",
+      "OpenAI",
+      "Vector DB"
+    ],
+    "tags": [
+      "AI",
+      "Enterprise"
+    ],
+    "platform": "Web",
+    "category": "Tools",
+    "version": "Concept",
+    "url": null,
+    "github": "https://github.com/asiffmahmad/dummy",
+    "docsUrl": null,
+    "updatedAt": "2026-05-10",
+    "previewImage": null,
+    "color": "blue"
+  },
+  {
+    "id": "portfolio-cms",
+    "name": "Portfolio CMS",
+    "status": "Open Source",
+    "description": "A headless content management system optimized specifically for design engineers and product builders.",
+    "techStack": [
+      "Node.js",
+      "GraphQL",
+      "Redis"
+    ],
+    "tags": [
+      "CMS",
+      "Open Source"
+    ],
+    "platform": "API",
+    "category": "Infrastructure",
+    "version": "v1.0.0",
+    "url": null,
+    "github": "https://github.com/asiffmahmad/portfolio-cms",
+    "docsUrl": "https://github.com/asiffmahmad/portfolio-cms#readme",
+    "updatedAt": "2026-07-01",
+    "previewImage": null,
+    "color": "green"
+  },
+  {
+    "id": "analytics",
+    "name": "Analytics",
+    "status": "Research",
+    "description": "Privacy-first, lightweight analytics engine tailored for independent creators and small projects.",
+    "techStack": [
+      "Go",
+      "ClickHouse"
+    ],
+    "tags": [
+      "Data",
+      "Privacy"
+    ],
+    "platform": "Infrastructure",
+    "category": "Data",
+    "version": "Research Phase",
+    "url": null,
+    "github": "https://github.com/asiffmahmad/dummy",
+    "docsUrl": null,
+    "updatedAt": "2026-04-15",
+    "previewImage": null,
+    "color": "gray"
+  }
+]
