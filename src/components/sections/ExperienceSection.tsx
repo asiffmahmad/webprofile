@@ -59,7 +59,7 @@ export function ExperienceSection() {
               <p className="text-[10px] uppercase tracking-widest font-semibold text-muted mb-3">Core Focus</p>
               <div className="flex flex-wrap gap-2">
                 {exp.focus.map(f => (
-                  <span key={f} className="text-xs font-medium text-muted-foreground bg-background border border-border px-2 py-1 rounded-md">
+                  <span key={f} className="text-xs font-medium text-muted-foreground bg-background border border-border px-2 py-1 rounded-md hover:scale-110 hover:-translate-y-0.5 hover:shadow-sm hover:bg-foreground/5 hover:text-foreground transition-all duration-200 cursor-default">
                     {f}
                   </span>
                 ))}
