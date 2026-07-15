@@ -30,12 +30,7 @@ export function StickyHeader() {
   }, []);
 
   return (
-    <motion.header 
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`relative z-50 transition-all duration-300 bg-background py-6`}
-    >
+    <header className="w-full bg-background border-b border-border/40 py-4 shadow-sm z-50">
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="font-serif text-3xl font-bold tracking-tight hover:scale-105 transition-transform cursor-pointer">
           <a href="#">asiff.dev</a>
@@ -67,6 +62,6 @@ export function StickyHeader() {
           <ThemeToggle />
         </div>
       </div>
-    </motion.header>
+    </header>
   );
 }

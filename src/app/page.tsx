@@ -6,12 +6,16 @@ import { FooterSection } from "@/components/sections/FooterSection";
 
 export default function Home() {
   return (
-    <main className="h-[100dvh] overflow-y-scroll overflow-x-hidden snap-y snap-mandatory selection:bg-accent/20 bg-background text-foreground scroll-smooth">
-      <StickyHeader />
-      <HeroSection />
+    <div className="flex flex-col h-[100dvh] overflow-hidden bg-background">
+      <div className="flex-none">
+        <StickyHeader />
+      </div>
+      <main className="flex-1 overflow-y-scroll overflow-x-hidden snap-y snap-mandatory selection:bg-accent/20 text-foreground scroll-smooth relative">
+        <HeroSection />
       <ExperienceSection />
       <ProductsSection />
       <FooterSection />
     </main>
+    </div>
   );
 }

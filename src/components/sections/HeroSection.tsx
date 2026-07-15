@@ -12,7 +12,7 @@ export function HeroSection() {
   const opacity = useTransform(scrollY, [0, 800], [1, 0]);
 
   return (
-    <section id="home" className="relative min-h-[100dvh] snap-start flex items-center pt-24 pb-12">
+    <section id="home" className="relative min-h-[100dvh] snap-start flex flex-col justify-center pb-12">
       
       {/* 
         GLOBAL HERO BACKGROUND LAYERS 
