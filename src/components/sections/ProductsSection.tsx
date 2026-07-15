@@ -88,12 +88,12 @@ function ProductCard({ product, isLarge }: { product: Product, isLarge: boolean 
       <div className="relative z-10 pt-6 border-t border-border/40 mt-auto">
         <div className="flex flex-wrap gap-2 mb-6">
           {product.tags && product.tags.map((tag: string) => (
-            <span key={tag} className="px-2 py-1 rounded-md bg-foreground/5 border border-border text-[10px] font-medium text-foreground">
+            <span key={tag} className="px-2 py-1 rounded-md bg-foreground/5 border border-border text-[10px] font-medium text-foreground hover:scale-110 hover:-translate-y-0.5 hover:shadow-sm hover:bg-foreground/10 transition-all duration-200 cursor-default">
               {tag}
             </span>
           ))}
           {product.techStack.map((tech: string) => (
-            <span key={tech} className="px-2 py-1 rounded-md bg-accent/5 border border-accent/10 text-[10px] font-medium text-muted-foreground">
+            <span key={tech} className="px-2 py-1 rounded-md bg-accent/5 border border-accent/10 text-[10px] font-medium text-muted-foreground hover:scale-110 hover:-translate-y-0.5 hover:shadow-sm hover:bg-accent/10 hover:text-accent transition-all duration-200 cursor-default">
               {tech}
             </span>
           ))}
