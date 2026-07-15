@@ -49,7 +49,7 @@ export function HeroSection() {
         </svg>
       </div>
 
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-start relative z-10 pt-12 md:pt-20">
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-start relative z-10 pt-4 md:pt-8">
         
         <motion.div 
           className="md:col-span-7 lg:col-span-7 space-y-6 md:space-y-8 z-20"
@@ -58,7 +58,7 @@ export function HeroSection() {
           animate="animate"
         >
           <motion.div variants={fadeUp} className="space-y-4">
-            <p className="text-accent text-xs md:text-sm font-semibold tracking-widest uppercase mt-4 md:mt-8 lg:mt-12">
+            <p className="text-accent text-xs md:text-sm font-semibold tracking-widest uppercase">
               {heroData.eyebrow}
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif mb-6 leading-[1.1] tracking-tight">
