@@ -7,11 +7,9 @@ import { motion } from "framer-motion";
 
 export function StickyHeader() {
   const [activeSection, setActiveSection] = React.useState("");
-  const [isScrolled, setIsScrolled] = React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
       
       // Update active section based on scroll position
       const sections = siteData.navigation.map(nav => nav.href.replace('#', ''));
@@ -36,7 +34,7 @@ export function StickyHeader() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background border-b border-border/40 py-2 shadow-sm' : 'bg-transparent py-6'}`}
+      className={`relative z-50 transition-all duration-300 bg-background py-6`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="font-serif text-3xl font-bold tracking-tight hover:scale-105 transition-transform cursor-pointer">
