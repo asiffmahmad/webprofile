@@ -49,16 +49,16 @@ export function HeroSection() {
         </svg>
       </div>
 
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start relative z-10">
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-start relative z-10 pt-12 md:pt-20">
         
         <motion.div 
-          className="md:col-span-7 lg:col-span-7 space-y-8 md:space-y-10 z-20 pt-8 lg:pt-24"
+          className="md:col-span-7 lg:col-span-7 space-y-6 md:space-y-8 z-20"
           variants={staggerContainer}
           initial="initial"
           animate="animate"
         >
           <motion.div variants={fadeUp} className="space-y-4">
-            <p className="text-accent text-xs md:text-sm font-semibold tracking-widest uppercase">
+            <p className="text-accent text-xs md:text-sm font-semibold tracking-widest uppercase mt-4 md:mt-8 lg:mt-12">
               {heroData.eyebrow}
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif mb-6 leading-[1.1] tracking-tight">
@@ -67,11 +67,11 @@ export function HeroSection() {
             </h1>
           </motion.div>
 
-          <motion.p variants={fadeUp} className="text-lg md:text-xl lg:text-2xl text-muted font-light mb-8 md:mb-12 max-w-2xl leading-relaxed">
+          <motion.p variants={fadeUp} className="text-lg md:text-xl lg:text-2xl text-muted font-light mb-8 max-w-2xl leading-relaxed">
             {heroData.description}
           </motion.p>
 
-          <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 md:gap-6 pt-4">
+          <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 md:gap-6 pt-2">
             <Button asChild size="lg" className="bg-foreground text-background hover:bg-foreground/90 rounded-full h-12 md:h-14 px-8 text-sm md:text-base shadow-lg shadow-black/5 hover:scale-105 transition-transform">
               <a href="#products">{heroData.primaryButton}</a>
             </Button>
@@ -84,14 +84,14 @@ export function HeroSection() {
         {/* PORTRAIT */}
         <motion.div 
           style={{ y, opacity }}
-          className="md:col-span-5 lg:col-span-5 relative h-[250px] sm:h-[300px] md:h-[450px] lg:h-[550px] pointer-events-none mt-8 md:mt-0 lg:-mt-10 z-10"
+          className="md:col-span-5 lg:col-span-5 relative h-[250px] sm:h-[300px] md:h-[450px] lg:h-[550px] pointer-events-none z-10"
         >
           <div className="absolute inset-0 w-full h-full">
             <Image
               src="/images/Subject.png"
               alt="Asiff Mahmad"
               fill
-              className="object-contain object-bottom"
+              className="object-contain object-top md:object-right-top"
               priority
             />
           </div>
