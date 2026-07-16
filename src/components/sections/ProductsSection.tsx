@@ -109,22 +109,22 @@ function ProductCard({ product, isLarge }: { product: Product, isLarge: boolean 
           </div>
 
           <div className="flex items-center gap-2">
-            <Button variant="outline" className="rounded-full h-8 px-4 text-xs font-medium hover:bg-foreground hover:text-background transition-colors" asChild>
+            <Button variant="outline" className="rounded-full h-8 px-4 text-xs font-medium hover:bg-foreground hover:text-background hover:scale-110 hover:-translate-y-0.5 hover:shadow-md transition-all duration-200" asChild>
               <a href={`/products/${product.id}`}>View Details</a>
             </Button>
             
             {product.github && (
-              <Button variant="ghost" size="icon" className="w-8 h-8 rounded-full hover:bg-foreground/5" asChild>
+              <Button variant="ghost" size="icon" className="w-8 h-8 rounded-full hover:bg-foreground/5 hover:scale-110 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200" asChild>
                 <a href={product.github} target="_blank" rel="noopener noreferrer"><GitBranch className="w-4 h-4"/></a>
               </Button>
             )}
             {product.docsUrl && (
-              <Button variant="ghost" size="icon" className="w-8 h-8 rounded-full hover:bg-foreground/5" asChild>
+              <Button variant="ghost" size="icon" className="w-8 h-8 rounded-full hover:bg-foreground/5 hover:scale-110 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200" asChild>
                 <a href={product.docsUrl} target="_blank" rel="noopener noreferrer"><BookOpen className="w-4 h-4"/></a>
               </Button>
             )}
             {product.url && (
-              <Button className="rounded-full bg-foreground text-background hover:bg-foreground/80 text-xs h-8 px-4" asChild>
+              <Button className="rounded-full bg-foreground text-background hover:bg-foreground/80 hover:scale-110 hover:-translate-y-0.5 hover:shadow-md text-xs h-8 px-4 transition-all duration-200" asChild>
                 <a href={product.url} target="_blank" rel="noopener noreferrer">Launch <ExternalLink className="ml-2 w-3 h-3"/></a>
               </Button>
             )}
