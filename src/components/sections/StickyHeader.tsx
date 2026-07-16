@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import siteData from "@config/site.json";
 import { motion } from "framer-motion";
@@ -32,17 +33,24 @@ export function StickyHeader() {
   return (
     <header className="w-full bg-background border-b border-border/40 py-4 shadow-sm z-50">
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <div className="font-serif text-3xl font-bold tracking-tight hover:scale-105 transition-transform cursor-pointer">
-          <a href="#">asiff.dev</a>
+        <div className="hover:scale-105 transition-transform cursor-pointer">
+          <Link href="/" className="flex items-center gap-3">
+            <img src="/images/Subject.png" alt="Logo" className="w-10 h-10 rounded-full border border-border/50 shadow-sm bg-accent/5 object-cover" />
+            <span className="font-serif text-2xl font-bold tracking-tight hidden sm:block">asiff.dev</span>
+          </Link>
         </div>
         
         <nav className="hidden md:flex items-center gap-1 relative">
           {siteData.navigation.map((item) => {
             const isActive = activeSection === item.href.replace('#', '');
+            // If we are not on the home page, prefix anchor links with '/'
+            const isAnchor = item.href.startsWith('#');
+            const targetHref = isAnchor ? `/${item.href}` : item.href;
+            
             return (
-              <a 
+              <Link 
                 key={item.href} 
-                href={item.href} 
+                href={targetHref} 
                 className={`relative px-4 py-2 text-sm font-medium transition-colors ${isActive ? 'text-foreground' : 'text-muted hover:text-foreground'}`}
               >
                 {isActive && (
@@ -53,7 +61,7 @@ export function StickyHeader() {
                   />
                 )}
                 <span className="relative z-10">{item.label}</span>
-              </a>
+              </Link>
             );
           })}
         </nav>

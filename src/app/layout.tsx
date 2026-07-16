@@ -10,11 +10,13 @@ import { AnalyticsProvider } from "@/components/seo/AnalyticsProvider";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  preload: false,
 });
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
+  preload: false,
 });
 
 export const metadata: Metadata = {
