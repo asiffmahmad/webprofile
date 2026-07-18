@@ -104,5 +104,57 @@
     "updatedAt": "2026-07-01",
     "previewImage": null,
     "color": "purple"
+  },
+  {
+    "id": "e-commerce-engine",
+    "name": "Headless E-commerce Engine",
+    "status": "Live",
+    "description": "A high-performance headless e-commerce backend with GraphQL API, integrated Stripe payments, and a customizable inventory management system.",
+    "techStack": [
+      "Node.js",
+      "GraphQL",
+      "PostgreSQL",
+      "Redis",
+      "Stripe"
+    ],
+    "tags": [
+      "E-commerce",
+      "Backend"
+    ],
+    "platform": "API",
+    "category": "Commerce",
+    "version": "v2.1.0",
+    "url": "https://api.example-commerce.com",
+    "github": null,
+    "docsUrl": "https://docs.example-commerce.com",
+    "updatedAt": "2026-06-15",
+    "previewImage": null,
+    "color": "indigo"
+  },
+  {
+    "id": "cloud-analytics",
+    "name": "Cloud Analytics Dashboard",
+    "status": "Building",
+    "description": "Real-time analytics dashboard for monitoring cloud infrastructure, tracking application metrics, and generating automated performance reports.",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "AWS CloudWatch",
+      "D3.js"
+    ],
+    "tags": [
+      "Analytics",
+      "Frontend"
+    ],
+    "platform": "Web",
+    "category": "Data Visualization",
+    "version": "v0.9.0-beta",
+    "url": null,
+    "github": null,
+    "docsUrl": null,
+    "updatedAt": "2026-07-16",
+    "previewImage": null,
+    "color": "cyan"
   }
 ]

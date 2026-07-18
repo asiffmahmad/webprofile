@@ -17,7 +17,7 @@ const getStatusColor = (status: string) => {
     default: return 'text-foreground bg-background border-border';
   }
 };
-interface Product {
+export interface Product {
   id: string;
   name: string;
   status: string;
@@ -35,7 +35,7 @@ interface Product {
   color: string;
 }
 
-function ProductCard({ product, isLarge }: { product: Product, isLarge: boolean }) {
+export function ProductCard({ product, isLarge, className }: { product: Product, isLarge: boolean, className?: string }) {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
@@ -50,7 +50,7 @@ function ProductCard({ product, isLarge }: { product: Product, isLarge: boolean 
       variants={fadeUp}
       whileHover={{ y: -5, transition: { duration: 0.2, ease: "easeOut" } }}
       onMouseMove={handleMouseMove}
-      className="w-[85vw] sm:w-[400px] md:w-auto flex-shrink-0 snap-start h-full bg-card border border-border/60 rounded-[2rem] p-6 md:p-10 hover:border-accent/40 transition-all flex flex-col justify-between group relative overflow-hidden"
+      className={`bg-card border border-border/60 rounded-[2rem] p-6 md:p-10 hover:border-accent/40 transition-all flex flex-col justify-between group relative overflow-hidden ${className || ''}`}
     >
       {/* Cursor-aware Glow Effect */}
       <motion.div
@@ -153,8 +153,8 @@ export function ProductsSection() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-4 md:mb-6 text-balance">Product Ecosystem</h2>
             <p className="text-lg md:text-xl text-muted font-light max-w-2xl text-balance">An interconnected suite of tools designed for clarity, focus, and productivity.</p>
           </div>
-          <Button variant="outline" className="w-full md:w-auto rounded-full hover:bg-foreground hover:text-background transition-colors">
-            View All Initiatives <ArrowUpRight className="ml-2 w-4 h-4" />
+          <Button variant="outline" className="w-full md:w-auto rounded-full hover:bg-foreground hover:text-background transition-colors" asChild>
+            <a href="/products">View All Initiatives <ArrowUpRight className="ml-2 w-4 h-4" /></a>
           </Button>
         </motion.div>
 
@@ -179,7 +179,7 @@ export function ProductsSection() {
           viewport={{ once: true, margin: "-100px" }}
         >
           {productsData.map((product) => (
-            <ProductCard key={product.id} product={product as Product} isLarge={false} />
+            <ProductCard key={product.id} product={product as Product} isLarge={false} className="w-[85vw] sm:w-[400px] md:w-auto flex-shrink-0 snap-start h-full" />
           ))}
         </motion.div>
       </div>
