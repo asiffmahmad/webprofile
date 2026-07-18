@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import experienceData from "@/data/experience.json";
 import { fadeUp, staggerContainer, hoverLift } from "@/lib/animations";
 import { Box, Circle, Hexagon, Diamond, ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 
 const getIcon = (shape: string) => {
   switch (shape) {

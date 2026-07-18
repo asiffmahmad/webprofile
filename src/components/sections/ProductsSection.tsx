@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { ArrowUpRight, GitBranch, ExternalLink, BookOpen, ChevronLeft, ChevronRight } from "lucide-react";
 import productsData from "@/data/products.json";
 import { fadeUp, staggerContainer } from "@/lib/animations";

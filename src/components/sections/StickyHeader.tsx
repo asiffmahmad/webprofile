@@ -6,7 +6,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import siteData from "@config/site.json";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 
 export function StickyHeader() {
   const [activeSection, setActiveSection] = React.useState("");

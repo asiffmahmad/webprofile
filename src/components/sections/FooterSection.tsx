@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import siteData from "@config/site.json";
 import socialData from "@config/social.json";
 import { fadeUp, staggerContainer } from "@/lib/animations";

@@ -8,7 +8,7 @@ import { ProductCard, Product } from "@/components/sections/ProductsSection";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 
 export default function AllProductsPage() {
   return (
