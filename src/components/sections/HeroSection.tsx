@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import heroData from "@/data/hero.json";
 import { fadeUp, staggerContainer } from "@/lib/animations";
@@ -12,7 +12,7 @@ export function HeroSection() {
   const opacity = useTransform(scrollY, [0, 800], [1, 0]);
 
   return (
-    <section id="home" className="relative min-h-[100dvh] snap-start flex flex-col justify-center pb-12">
+    <section id="home" className="relative min-h-[85svh] md:min-h-[100dvh] md:snap-start flex flex-col justify-center pt-20 md:pt-0 pb-12">
       
       {/* 
         GLOBAL HERO BACKGROUND LAYERS 
@@ -33,7 +33,7 @@ export function HeroSection() {
         />
 
         {/* Layer 2: Sketch Pencil Lines */}
-        <svg className="absolute right-0 top-0 w-full lg:w-[60vw] h-full min-w-[600px] opacity-50 dark:opacity-30" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <svg className="absolute right-0 top-0 w-full lg:w-[60vw] h-full min-w-[600px] opacity-50 dark:opacity-30" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
           <path d="M10,90 Q30,10 50,80 T90,20" fill="none" stroke="currentColor" strokeWidth="0.2" className="text-black/5 dark:text-white/5" />
           <path d="M20,95 Q40,30 60,85 T80,10" fill="none" stroke="currentColor" strokeWidth="0.1" className="text-black/5 dark:text-white/5" />
           <path d="M5,50 Q20,20 80,80 T95,30" fill="none" stroke="currentColor" strokeWidth="0.15" className="text-black/5 dark:text-white/5" />
@@ -41,7 +41,7 @@ export function HeroSection() {
         </svg>
 
         {/* Layer 3: Subtle Grain Texture */}
-        <svg className="absolute inset-0 w-full h-full opacity-[0.10] dark:opacity-5 mix-blend-overlay">
+        <svg className="hidden md:block absolute inset-0 w-full h-full opacity-[0.10] dark:opacity-5 mix-blend-overlay" aria-hidden="true">
           <filter id="heroNoiseFilter">
             <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
           </filter>
@@ -49,7 +49,7 @@ export function HeroSection() {
         </svg>
       </div>
 
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-start relative z-10 pt-4 md:pt-8">
+      <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-start relative z-10 pt-4 md:pt-8">
         
         <motion.div 
           className="md:col-span-7 lg:col-span-7 space-y-6 md:space-y-8 z-20"
@@ -61,21 +61,21 @@ export function HeroSection() {
             <p className="text-accent text-xs md:text-sm font-semibold tracking-widest uppercase">
               {heroData.eyebrow}
             </p>
-            <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif mb-6 leading-[1.1] tracking-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-8xl font-serif mb-6 leading-[1.1] tracking-tight text-balance">
               {heroData.title} <br className="hidden md:block" />
               <span className="italic text-muted">{heroData.highlight}</span>
             </h1>
           </motion.div>
 
-          <motion.p variants={fadeUp} className="text-lg md:text-xl lg:text-2xl text-muted font-light mb-8 max-w-2xl leading-relaxed">
+          <motion.p variants={fadeUp} className="text-lg md:text-xl lg:text-2xl text-muted font-light mb-8 max-w-2xl leading-relaxed text-balance">
             {heroData.description}
           </motion.p>
 
-          <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 md:gap-6 pt-2">
-            <Button asChild size="lg" className="bg-foreground text-background hover:bg-foreground/90 rounded-full h-12 md:h-14 px-8 text-sm md:text-base shadow-lg shadow-black/5 hover:scale-105 transition-transform">
+          <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 md:gap-6 pt-2 w-full">
+            <Button asChild size="lg" className="w-full sm:w-auto bg-foreground text-background hover:bg-foreground/90 rounded-full h-12 md:h-14 px-8 text-sm md:text-base shadow-lg shadow-black/5 hover:scale-105 transition-transform">
               <a href="#products">{heroData.primaryButton}</a>
             </Button>
-            <Button asChild variant="ghost" size="lg" className="rounded-full h-12 md:h-14 px-8 text-sm md:text-base font-medium group hover:bg-accent/5">
+            <Button asChild variant="ghost" size="lg" className="w-full sm:w-auto rounded-full h-12 md:h-14 px-8 text-sm md:text-base font-medium group hover:bg-accent/5">
               <a href="#connect">{heroData.secondaryButton}</a>
             </Button>
           </motion.div>
@@ -84,7 +84,7 @@ export function HeroSection() {
         {/* PORTRAIT */}
         <motion.div 
           style={{ y, opacity }}
-          className="md:col-span-5 lg:col-span-5 relative h-[250px] sm:h-[300px] md:h-[450px] lg:h-[550px] pointer-events-none z-10"
+          className="md:col-span-5 lg:col-span-5 relative h-[200px] sm:h-[300px] md:h-[450px] lg:h-[550px] pointer-events-none z-10"
         >
           <div className="absolute inset-0 w-full h-full">
             <Image

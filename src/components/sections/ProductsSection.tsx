@@ -1,8 +1,9 @@
 "use client";
 
+import * as React from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { ArrowUpRight, GitBranch, ExternalLink, BookOpen } from "lucide-react";
+import { Button } from "@/components/ui/Button";
+import { ArrowUpRight, GitBranch, ExternalLink, BookOpen, ChevronLeft, ChevronRight } from "lucide-react";
 import productsData from "@/data/products.json";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 
@@ -49,7 +50,7 @@ function ProductCard({ product, isLarge }: { product: Product, isLarge: boolean 
       variants={fadeUp}
       whileHover={{ y: -5, transition: { duration: 0.2, ease: "easeOut" } }}
       onMouseMove={handleMouseMove}
-      className="h-full w-full bg-card border border-border/60 rounded-[2rem] p-8 md:p-10 hover:border-accent/40 transition-all flex flex-col justify-between group relative overflow-hidden"
+      className="w-[85vw] sm:w-[400px] md:w-auto flex-shrink-0 snap-start h-full bg-card border border-border/60 rounded-[2rem] p-6 md:p-10 hover:border-accent/40 transition-all flex flex-col justify-between group relative overflow-hidden"
     >
       {/* Cursor-aware Glow Effect */}
       <motion.div
@@ -99,7 +100,7 @@ function ProductCard({ product, isLarge }: { product: Product, isLarge: boolean 
           ))}
         </div>
 
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="flex flex-wrap items-center gap-2 md:gap-4 text-[10px] md:text-xs font-medium text-muted">
             <span>{product.category}</span>
             <span className="w-1 h-1 rounded-full bg-border"></span>
@@ -108,8 +109,8 @@ function ProductCard({ product, isLarge }: { product: Product, isLarge: boolean 
             <span>{product.version}</span>
           </div>
 
-          <div className="flex items-center gap-2">
-            <Button variant="outline" className="rounded-full h-8 px-4 text-xs font-medium hover:bg-foreground hover:text-background hover:scale-110 hover:-translate-y-0.5 hover:shadow-md transition-all duration-200" asChild>
+          <div className="flex flex-wrap items-center gap-2 w-full sm:w-auto">
+            <Button variant="outline" className="flex-1 sm:flex-none rounded-full h-8 px-4 text-xs font-medium hover:bg-foreground hover:text-background hover:scale-110 hover:-translate-y-0.5 hover:shadow-md transition-all duration-200" asChild>
               <a href={`/products/${product.id}`}>View Details</a>
             </Button>
             
@@ -124,7 +125,7 @@ function ProductCard({ product, isLarge }: { product: Product, isLarge: boolean 
               </Button>
             )}
             {product.url && (
-              <Button className="rounded-full bg-foreground text-background hover:bg-foreground/80 hover:scale-110 hover:-translate-y-0.5 hover:shadow-md text-xs h-8 px-4 transition-all duration-200" asChild>
+              <Button className="flex-1 sm:flex-none rounded-full bg-foreground text-background hover:bg-foreground/80 hover:scale-110 hover:-translate-y-0.5 hover:shadow-md text-xs h-8 px-4 transition-all duration-200" asChild>
                 <a href={product.url} target="_blank" rel="noopener noreferrer">Launch <ExternalLink className="ml-2 w-3 h-3"/></a>
               </Button>
             )}
@@ -136,27 +137,42 @@ function ProductCard({ product, isLarge }: { product: Product, isLarge: boolean 
 }
 
 export function ProductsSection() {
+  const scrollRef = React.useRef<HTMLDivElement>(null);
+
   return (
-    <section id="products" className="bg-background border-y border-border/50 relative min-h-[100dvh] snap-start pt-24 md:pt-32 pb-12 md:pb-20 flex flex-col">
-      <div className="container mx-auto px-6">
+    <section id="products" className="bg-background border-y border-border/50 relative min-h-[85svh] md:min-h-[100dvh] md:snap-start pt-16 md:pt-32 pb-12 md:pb-20 flex flex-col">
+      <div className="container mx-auto px-4 md:px-6">
         <motion.div 
-          className="flex flex-col md:flex-row justify-between items-end mb-10 md:mb-16 gap-4 md:gap-6"
+          className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 gap-4 md:gap-6"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
         >
           <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-4 md:mb-6">Product Ecosystem</h2>
-            <p className="text-lg md:text-xl text-muted font-light max-w-2xl">An interconnected suite of tools designed for clarity, focus, and productivity.</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-4 md:mb-6 text-balance">Product Ecosystem</h2>
+            <p className="text-lg md:text-xl text-muted font-light max-w-2xl text-balance">An interconnected suite of tools designed for clarity, focus, and productivity.</p>
           </div>
-          <Button variant="outline" className="rounded-full hover:bg-foreground hover:text-background transition-colors">
+          <Button variant="outline" className="w-full md:w-auto rounded-full hover:bg-foreground hover:text-background transition-colors">
             View All Initiatives <ArrowUpRight className="ml-2 w-4 h-4" />
           </Button>
         </motion.div>
 
+        <div className="flex items-center justify-between mb-4 md:hidden px-4 -mx-4">
+          <p className="text-xs text-muted-foreground font-semibold uppercase tracking-widest">Swipe to explore</p>
+          <div className="flex gap-2">
+            <Button variant="outline" size="icon" onClick={() => scrollRef.current?.scrollBy({ left: -window.innerWidth * 0.8, behavior: 'smooth' })} className="w-8 h-8 rounded-full border-border/50 text-foreground">
+              <ChevronLeft className="w-4 h-4" />
+            </Button>
+            <Button variant="outline" size="icon" onClick={() => scrollRef.current?.scrollBy({ left: window.innerWidth * 0.8, behavior: 'smooth' })} className="w-8 h-8 rounded-full border-border/50 text-foreground">
+              <ChevronRight className="w-4 h-4" />
+            </Button>
+          </div>
+        </div>
+
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          ref={scrollRef}
+          className="flex overflow-x-auto snap-x snap-mandatory md:overflow-visible md:grid md:grid-cols-2 gap-6 pb-6 -mx-4 px-4 md:mx-0 md:px-0 md:pb-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
           variants={staggerContainer}
           initial="initial"
           whileInView="animate"

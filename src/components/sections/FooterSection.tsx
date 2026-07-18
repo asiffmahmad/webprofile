@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import siteData from "@config/site.json";
 import socialData from "@config/social.json";
 import { fadeUp, staggerContainer } from "@/lib/animations";
@@ -11,12 +11,12 @@ import { SocialIcon, SocialPlatform } from "@/components/ui/SocialIcons";
 
 export function FooterSection() {
   return (
-    <section id="connect" className="relative bg-background overflow-hidden min-h-[100dvh] snap-start flex flex-col justify-center py-12 lg:py-16">
+    <section id="connect" className="relative bg-background overflow-hidden min-h-[85svh] md:min-h-[100dvh] md:snap-start flex flex-col justify-center py-12 lg:py-16">
       
       {/* Background Soft Watercolor Glow */}
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-orange-500/10 dark:bg-orange-500/15 rounded-full blur-[100px] pointer-events-none translate-y-1/2 -translate-x-1/4"></div>
 
-      <div className="container mx-auto px-6 flex-1 flex flex-col justify-center relative z-10 max-w-7xl">
+      <div className="container mx-auto px-4 md:px-6 flex-1 flex flex-col justify-center relative z-10 max-w-7xl">
         
         <div className="flex flex-col w-full">
           {/* 1. Large Editorial Headline */}
@@ -29,7 +29,7 @@ export function FooterSection() {
           >
             <motion.h2 
               variants={fadeUp} 
-              className="text-4xl md:text-5xl lg:text-7xl font-serif leading-[1.05] tracking-tight mb-4 max-w-5xl"
+              className="text-3xl md:text-5xl lg:text-7xl font-serif leading-[1.05] tracking-tight mb-4 max-w-5xl text-balance"
               dangerouslySetInnerHTML={{ __html: siteData.footer.heading }}
             />
             <motion.p variants={fadeUp} className="text-lg md:text-xl text-muted-foreground font-light max-w-2xl">
