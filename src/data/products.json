@@ -3,48 +3,53 @@
     "id": "vision-board",
     "name": "My Vision Board",
     "status": "Live",
-    "description": "A modern digital canvas to organize your goals, aspirations, and visual inspiration. Built for clarity and focus.",
+    "description": "A full-stack productivity platform that helps users visualize goals, organize ideas, and track personal growth through customizable digital vision boards.",
     "techStack": [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Supabase"
+      "React",
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "JWT",
+      "Docker"
     ],
     "tags": [
-      "Design",
-      "Productivity"
+      "Productivity",
+      "Full Stack"
     ],
     "platform": "Web",
-    "category": "Productivity",
+    "category": "Featured Product",
     "version": "v1.2.0",
     "url": "https://my-vision-board.asiff.dev/",
-    "github": "https://github.com/asiffmahmad/dummy",
-    "docsUrl": "https://docs.vision.asiff.dev",
+    "github": null,
+    "docsUrl": null,
     "updatedAt": "2026-07-10",
     "previewImage": null,
     "color": "green"
   },
   {
-    "id": "company-os",
-    "name": "Company Management",
+    "id": "company-management",
+    "name": "Company Management Platform",
     "status": "Building",
-    "description": "Unified management dashboard for independent builders and small studios to run their operations effortlessly.",
+    "description": "An all-in-one business management platform for handling employees, projects, clients, invoices, HR, and daily operations from a unified dashboard.",
     "techStack": [
-      "Next.js",
-      "Prisma",
-      "PostgreSQL"
+      "React",
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "Docker",
+      "AWS"
     ],
     "tags": [
-      "B2B",
+      "Enterprise",
       "SaaS"
     ],
     "platform": "Web",
     "category": "Business",
-    "version": "v0.5.0-alpha",
+    "version": "v0.6.0-alpha",
     "url": null,
-    "github": "https://github.com/asiffmahmad/dummy",
+    "github": null,
     "docsUrl": null,
-    "updatedAt": "2026-06-25",
+    "updatedAt": "2026-07-15",
     "previewImage": null,
     "color": "orange"
   },
@@ -52,71 +57,52 @@
     "id": "ai-workspace",
     "name": "AI Workspace",
     "status": "Planning",
-    "description": "A centralized, intelligence-driven environment for managing engineering workflows and research.",
+    "description": "An AI-powered developer workspace that combines code generation, documentation, project management, and intelligent engineering assistants into a single platform.",
     "techStack": [
-      "Next.js",
+      "React",
+      "Spring AI",
+      "Spring Boot",
       "OpenAI",
-      "Vector DB"
+      "PostgreSQL"
     ],
     "tags": [
       "AI",
-      "Enterprise"
+      "Developer Tools"
     ],
     "platform": "Web",
-    "category": "Tools",
+    "category": "Artificial Intelligence",
     "version": "Concept",
     "url": null,
-    "github": "https://github.com/asiffmahmad/dummy",
+    "github": null,
     "docsUrl": null,
-    "updatedAt": "2026-05-10",
+    "updatedAt": "2026-06-20",
     "previewImage": null,
     "color": "blue"
   },
   {
-    "id": "portfolio-cms",
-    "name": "Portfolio CMS",
+    "id": "spring-starter-kit",
+    "name": "Spring Boot Starter Kit",
     "status": "Open Source",
-    "description": "A headless content management system optimized specifically for design engineers and product builders.",
+    "description": "A production-ready Spring Boot starter template with JWT authentication, role-based authorization, logging, exception handling, Docker, and CI/CD configuration.",
     "techStack": [
-      "Node.js",
-      "GraphQL",
-      "Redis"
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "Docker",
+      "GitHub Actions"
     ],
     "tags": [
-      "CMS",
-      "Open Source"
+      "Open Source",
+      "Backend"
     ],
-    "platform": "API",
-    "category": "Infrastructure",
+    "platform": "GitHub",
+    "category": "Developer Tools",
     "version": "v1.0.0",
     "url": null,
-    "github": "https://github.com/asiffmahmad/portfolio-cms",
-    "docsUrl": "https://github.com/asiffmahmad/portfolio-cms#readme",
+    "github": "https://github.com/asiffmahmad/spring-boot-starter-kit",
+    "docsUrl": null,
     "updatedAt": "2026-07-01",
     "previewImage": null,
-    "color": "green"
-  },
-  {
-    "id": "analytics",
-    "name": "Analytics",
-    "status": "Research",
-    "description": "Privacy-first, lightweight analytics engine tailored for independent creators and small projects.",
-    "techStack": [
-      "Go",
-      "ClickHouse"
-    ],
-    "tags": [
-      "Data",
-      "Privacy"
-    ],
-    "platform": "Infrastructure",
-    "category": "Data",
-    "version": "Research Phase",
-    "url": null,
-    "github": "https://github.com/asiffmahmad/dummy",
-    "docsUrl": null,
-    "updatedAt": "2026-04-15",
-    "previewImage": null,
-    "color": "gray"
+    "color": "purple"
   }
 ]

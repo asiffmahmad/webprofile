@@ -1,30 +1,46 @@
 [
   {
-    "id": "banking",
-    "industry": "Banking Systems",
-    "focus": ["Backend", "Security", "Microservices"],
-    "description": "Engineered robust, high-availability backend microservices for global banking platforms. Focused intensely on security, transaction performance, and system integrity.",
+    "id": "backend",
+    "industry": "Backend Engineering",
+    "focus": [
+      "Java",
+      "Spring Boot",
+      "Microservices"
+    ],
+    "description": "Building secure, scalable backend services with Java and Spring Boot, focusing on REST APIs, microservices, authentication, and high-performance enterprise applications.",
     "iconShape": "square"
   },
   {
-    "id": "logistics",
-    "industry": "Global Logistics",
-    "focus": ["Architecture", "Cloud", "Scale"],
-    "description": "Led the development of scalable logistics systems handling millions of daily events. Architected complex AWS cloud solutions for real-time tracking.",
+    "id": "frontend",
+    "industry": "Frontend Development",
+    "focus": [
+      "React",
+      "Next.js",
+      "TypeScript"
+    ],
+    "description": "Developing responsive and modern web applications using React and Next.js with a strong emphasis on performance, accessibility, and intuitive user experiences.",
     "iconShape": "circle"
   },
   {
-    "id": "finance",
-    "industry": "Financial Platforms",
-    "focus": ["Compliance", "Transactions", "Reliability"],
-    "description": "Built mission-critical transactional platforms with rigorous compliance standards and zero-downtime deployment requirements.",
+    "id": "fullstack",
+    "industry": "Full-Stack Solutions",
+    "focus": [
+      "Node.js",
+      "Databases",
+      "APIs"
+    ],
+    "description": "Building end-to-end applications by integrating scalable backends, modern frontends, and databases to deliver reliable, production-ready software.",
     "iconShape": "diamond"
   },
   {
-    "id": "saas",
-    "industry": "Enterprise SaaS",
-    "focus": ["Modern Web", "Product", "User Experience"],
-    "description": "Designing and building premium, user-centric software products. Combining deep backend engineering expertise with modern frontend craftsmanship.",
+    "id": "cloud",
+    "industry": "Cloud & DevOps",
+    "focus": [
+      "AWS",
+      "Docker",
+      "CI/CD"
+    ],
+    "description": "Deploying and maintaining cloud-native applications with AWS, Docker, and automated CI/CD pipelines for secure, scalable, and reliable delivery.",
     "iconShape": "leaf"
   }
 ]
