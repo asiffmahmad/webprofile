@@ -1,7 +1,7 @@
 import React from "react";
-import { Mail, Globe } from "lucide-react";
+import { Mail, Globe, BookOpen } from "lucide-react";
 
-export type SocialPlatform = "github" | "linkedin" | "twitter" | "instagram" | "youtube" | "email" | "website";
+export type SocialPlatform = "github" | "linkedin" | "twitter" | "instagram" | "youtube" | "email" | "website" | "blog";
 
 interface SocialIconProps extends React.SVGProps<SVGSVGElement> {
   platform: SocialPlatform;
@@ -49,6 +49,8 @@ export function SocialIcon({ platform, ...props }: SocialIconProps) {
       return <Mail {...props} />;
     case "website":
       return <Globe {...props} />;
+    case "blog":
+      return <BookOpen {...props} />;
     default:
       return <Globe {...props} />;
   }
