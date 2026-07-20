@@ -32,6 +32,9 @@ export const metadata: Metadata = {
   openGraph: seoConfig.openGraph,
   twitter: seoConfig.twitter,
   verification: seoConfig.global.verification,
+  other: {
+    "google-adsense-account": "ca-pub-2199514170121947",
+  },
 };
 
 export default function RootLayout({
