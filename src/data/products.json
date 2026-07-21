@@ -27,6 +27,37 @@
     "color": "green"
   },
   {
+    "id": "ai-java-reviewer",
+    "name": "AI Java Reviewer",
+    "status": "Live",
+    "description": "A VS Code extension for enterprise Java and Spring Boot code reviews. It performs deterministic static analysis using enterprise-grade rules covering architecture, security, REST APIs, JPA, transactions, validation, logging, and clean code, while providing AI-powered explanations and actionable recommendations.",
+    "techStack": [
+      "TypeScript",
+      "VS Code Extension API",
+      "Java",
+      "Spring Boot",
+      "Markdown",
+      "JSON"
+    ],
+    "tags": [
+      "VS Code Extension",
+      "Java",
+      "Spring Boot",
+      "Static Analysis",
+      "AI",
+      "Developer Tools"
+    ],
+    "platform": "VS Code Marketplace",
+    "category": "Developer Tools",
+    "version": "v1.0.0",
+    "url": "https://marketplace.visualstudio.com/items?itemName=asiff.ai-java-reviewer",
+    "github": null,
+    "docsUrl": "https://marketplace.visualstudio.com/items/asiff.ai-java-reviewer/changelog",
+    "updatedAt": "2026-07-21",
+    "previewImage": null,
+    "color": "green"
+  },
+  {
     "id": "company-management",
     "name": "Company Management Platform",
     "status": "Building",
