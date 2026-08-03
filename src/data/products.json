@@ -58,6 +58,59 @@
     "color": "green"
   },
   {
+    "id": "retro-collection",
+    "name": "Retro Collection Arcade",
+    "status": "Live",
+    "description": "A high-performance HTML5 canvas arcade featuring classic retro games including Snake, Tetris, Breakout, 2048, Bomberman, and a pseudo-3D OutRun racing engine. Fully optimized for 60fps on mobile with tactile virtual controls.",
+    "techStack": [
+      "React",
+      "TypeScript",
+      "HTML5 Canvas",
+      "Vite",
+      "Tailwind CSS"
+    ],
+    "tags": [
+      "Games",
+      "Frontend",
+      "Arcade"
+    ],
+    "platform": "Web",
+    "category": "Entertainment",
+    "version": "v1.0.0",
+    "url": null,
+    "github": "https://github.com/asiffmahmad/RetroCollection",
+    "docsUrl": null,
+    "updatedAt": "2026-08-03",
+    "previewImage": null,
+    "color": "green"
+  },
+  {
+    "id": "spring-starter-kit",
+    "name": "Spring Boot Starter Kit",
+    "status": "Live",
+    "description": "A production-ready Spring Boot starter template with JWT authentication, role-based authorization, logging, exception handling, Docker, and CI/CD configuration.",
+    "techStack": [
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "Docker",
+      "GitHub Actions"
+    ],
+    "tags": [
+      "Open Source",
+      "Backend"
+    ],
+    "platform": "GitHub",
+    "category": "Developer Tools",
+    "version": "v1.0.0",
+    "url": null,
+    "github": "https://github.com/asiffmahmad/spring-starter-kit.git",
+    "docsUrl": null,
+    "updatedAt": "2026-07-01",
+    "previewImage": null,
+    "color": "green"
+  },
+  {
     "id": "company-management",
     "name": "Company Management Platform",
     "status": "Building",
@@ -109,32 +162,6 @@
     "updatedAt": "2026-06-20",
     "previewImage": null,
     "color": "blue"
-  },
-  {
-    "id": "spring-starter-kit",
-    "name": "Spring Boot Starter Kit",
-    "status": "Open Source",
-    "description": "A production-ready Spring Boot starter template with JWT authentication, role-based authorization, logging, exception handling, Docker, and CI/CD configuration.",
-    "techStack": [
-      "Java",
-      "Spring Boot",
-      "MySQL",
-      "Docker",
-      "GitHub Actions"
-    ],
-    "tags": [
-      "Open Source",
-      "Backend"
-    ],
-    "platform": "GitHub",
-    "category": "Developer Tools",
-    "version": "v1.0.0",
-    "url": null,
-    "github": "https://github.com/asiffmahmad/spring-boot-starter-kit",
-    "docsUrl": null,
-    "updatedAt": "2026-07-01",
-    "previewImage": null,
-    "color": "purple"
   },
   {
     "id": "e-commerce-engine",
